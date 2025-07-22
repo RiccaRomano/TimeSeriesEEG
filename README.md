@@ -28,7 +28,7 @@ This work implements a suite of autoregressive time-series models to describe an
 
 Program prerequisites include MATLAB version 2024b (or newer)
 
-Richard Foster: fosterrr@vcu.edu
+Richard Foster: fosterrr@vcu.edu <br />
 Cheng Ly: cly@vcu.edu (corresponding author)
 
 
