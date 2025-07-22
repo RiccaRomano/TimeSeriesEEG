@@ -22,7 +22,9 @@ This work implements a suite of autoregressive time-series models to describe an
 
 ## Code Architecture
 
+The "Data Analysis" folder contains the script ACF_PACF_Power.m, which calculates the ACF, PACF, and power spectrum of the candidate signal. Statistically significant lags are included in the AR_MA_Lags.mat file. Corresponding figures show the resulting ACF, PACF, and power spectrum estimates.
 
+The "AR Model" folder contains three major scripts (AIC_AR.m, Extract_AR.m, and Forecast_AR.m) which respectively determine optimal AR model order, extract model parameters, and forecast the resulting optimal model. The "ARX Model", "ARMAX Model", and "SARMAX Model" folders contain similar scripts for their respective model types. Each Forecast_XXX.m script contains the three forecast performance metrics mentioned above.
 
 ## Dependencies
 
@@ -31,4 +33,7 @@ Program prerequisites include MATLAB version 2024b (or newer)
 Richard Foster: fosterrr@vcu.edu <br />
 Cheng Ly: cly@vcu.edu (corresponding author)
 
+## Version History
 
+* 0.1
+    * Initial Release
