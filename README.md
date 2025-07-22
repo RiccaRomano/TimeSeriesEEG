@@ -11,11 +11,18 @@ Visual stimuli changing at constant temporal frequencies induces sharp peaks in 
 
 ## Description
 
-This work implements a suite of autoregressive time-series models to describe and predict EEG responses to randomly alternating visual stimuli. 
+This work implements a suite of autoregressive time-series models to describe and predict EEG responses to randomly alternating visual stimuli. The available code performs the following tasks:
+
+1. Calculates the autocorrelation (ACF), partial autocorrelation (PACF), and power spectrum of a candidate signal
+2. Constructs four models: AR, ARX, ARMAX, and SARMAX
+3. Performs an AIC search for optimal model orders against the candidate signal, using AR and MA lag indices according to signficance on the PACF and ACF plots
+4. Extracts the optimal model order for each model type (AR, ARX, ARMAX, SARMAX) and constructs an optimal estimated model
+5. Fits each model type to the in-sample period and forecasts into the out-of-sample period
+6. Measures forecasting accuracy via Pearson's correlation, power spectrum esimation (Welch's method), and by a histogram mean-squared error approach.
 
 ## Code Architecture
 
-Preliminary data analysis of one candidate signal is contained in the
+
 
 ## Dependencies
 
